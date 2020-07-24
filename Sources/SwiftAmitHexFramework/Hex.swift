@@ -12,7 +12,7 @@ import simd
 Based on [Hex Struct](https://www.redblobgames.com/grids/hexagons/implementation.html#hex)
 SIMD Version
 */
-struct Hex: Codable { // Cube storage, cube constructor
+public struct Hex: Codable { // Cube storage, cube constructor
 
 	// MARK: - Properties
 
@@ -22,11 +22,37 @@ struct Hex: Codable { // Cube storage, cube constructor
 	public var r: Int { get { return Int(position.y) } }
 	public var s: Int { get { return Int(position.z) } }
 
+	/**
+	Directions start with index 0 on tradisional cartesian plane along the x+ axis
+	They increase going around the origin counter-clockwise in 60 degree increments.
+	*/
+	static public let directions: [Hex] = [
+		Hex(q: 1, r: 0, s: -1),
+		Hex(q: 1, r: -1, s: 0),
+		Hex(q: 0, r: -1, s: 1),
+		Hex(q: -1, r: 0, s: 1),
+		Hex(q: -1, r: 1, s: 0),
+		Hex(q: 0, r: 1, s: -1)
+	]
+
 	// MARK: - Init
 
 	init(q: Int, r: Int, s: Int) {
 		precondition(q + r + s == 0, "All concordinates must sum to 0")
 		self.position = simd_int3(x: Int32(q), y: Int32(r), z: Int32(s))
+	}
+
+	init(q: Double, r: Double, s: Double) {
+		precondition(q + r + s == 0, "All concordinates must sum to 0")
+		self.position = simd_int3(x: Int32(q), y: Int32(r), z: Int32(s))
+	}
+
+	init(q: Int, r: Int) {
+		self.init(q: q, r: r, s: q - r)
+	}
+
+	init(q: Double, r: Double) {
+		self.init(q: q, r: r, s: q - r)
 	}
 
 	// MARK: - Operator Overrides
@@ -63,53 +89,78 @@ struct Hex: Codable { // Cube storage, cube constructor
 
 	/**
 	Same as vector length
+
+	See [Amit's Distance](https://www.redblobgames.com/grids/hexagons/implementation.html#hex-distance)
+
+
 	- Parameter hex: Hex
 	- Returns: Int
 	*/
-	func length(hex: Hex) -> Int{
+	static func length(hex: Hex) -> Int{
 		return Int((abs(hex.q) + abs(hex.r) + abs(hex.s)) / 2);
 	}
 
 	/**
 	The distance between two hexes is the length of the line between them.
+
+	See [Amit's Distance](https://www.redblobgames.com/grids/hexagons/implementation.html#hex-distance)
+
 	- Parameter a: Hex
 	- Parameter b: Hex
 	- Returns: Int
 	*/
-	func distance(a: Hex, b: Hex) -> Int {
+	static func distance(a: Hex, b: Hex) -> Int {
 		return length(hex: a - b);
 	}
+
+
+	/**
+	Gets the hex in the direction of given index.
+	- Parameter index: Int, index of the direction
+	- Returns: Hex
+	*/
+	func getHexInTheDirectionOfIndex(_ index: Int) -> Hex {
+		return Hex.directions[index]
+	}
+
+	/**
+	[Amit's Neighbors](https://www.redblobgames.com/grids/hexagons/implementation.html#hex-neighbors)
+	- Parameter direction: Int, direction index
+	- Returns: Hex
+	*/
+	func getHexNeighborInDirection(_ direction: Int) -> Hex {
+		return self + getHexInTheDirectionOfIndex(1)
+	}
+
 
 }
 
 
-// MARK: Protocol CustomStringConvertible
-
 extension Hex: CustomStringConvertible {
-	var description: String {
+	// MARK: Protocol CustomStringConvertible
+	public var description: String {
 		get {
 			return "q: \(q), r: \(r), s: \(s)"
 		}
 	}
 }
 
-// MARK: Protocol Equatable
 
 extension Hex: Equatable {
-	static func == (lhs: Hex, rhs: Hex) -> Bool {
+	// MARK: Protocol Equatable
+	public static func == (lhs: Hex, rhs: Hex) -> Bool {
 		return lhs.q == rhs.q && lhs.r == rhs.r && lhs.s == rhs.s
 	}
 
-	static func != (lhs: Hex, rhs: Hex) -> Bool {
+	public static func != (lhs: Hex, rhs: Hex) -> Bool {
 		return lhs.q != rhs.q || lhs.r != rhs.r || lhs.s != rhs.s
 	}
 }
 
 
-// MARK: Protocol Comparable
-
 extension Hex: Comparable {
-	static func < (lhs: Hex, rhs: Hex) -> Bool {
+	// MARK: Protocol Comparable
+	public static func < (lhs: Hex, rhs: Hex) -> Bool {
 		if abs(lhs.q) < abs(rhs.q) {
 			return true
 		} else if abs(lhs.r) < abs(rhs.r) {
@@ -120,3 +171,10 @@ extension Hex: Comparable {
 		return false
 	}
 }
+
+
+extension Hex: Hashable {
+	// MARK: Protocol Hashable
+}
+
+
