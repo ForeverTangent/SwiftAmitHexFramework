@@ -9,6 +9,8 @@ import Foundation
 import simd
 
 /**
+To find positions inside a Hex
+
 [Fractional Hex](https://www.redblobgames.com/grids/hexagons/implementation.html#fractionalhex)
 */
 public struct HexFractional<T: FloatingPoint> {

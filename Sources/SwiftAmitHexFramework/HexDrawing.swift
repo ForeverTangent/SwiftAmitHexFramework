@@ -29,15 +29,15 @@ public class HexDrawing<T: FloatingPoint>  {
 
 	// MARK: - Methods
 
-	private func getOffsetForHexagonCorner(_ corner: Int) -> WorldPoint<T>? {
-		let size: WorldPoint = hexLayout.size
+	private func getOffsetForHexagonCorner(_ corner: Int) -> HexWorldPoint<T>? {
+		let size: HexWorldPoint = hexLayout.size
 		let angle = 2.0 * Double.pi * (hexLayout.orientation.startingAngle + Double(corner)) / 6.0
-		return WorldPoint(x: size.x as! Double * cos(angle), y: size.y as! Double * sin(angle))
+		return HexWorldPoint(x: size.x as! Double * cos(angle), y: size.y as! Double * sin(angle))
 	}
 
 
-	func getWorldPointsOfCornersForHex(_ hex: Hex) -> [WorldPoint<T>] {
-		var hexagonCorners = [WorldPoint<T>]()
+	func getWorldPointsOfCornersForHex(_ hex: Hex) -> [HexWorldPoint<T>] {
+		var hexagonCorners = [HexWorldPoint<T>]()
 		let hexagonCenter = hexConvertor.getPixelFromHex(hex)
 
 		for index in 0..<6 {
@@ -45,7 +45,7 @@ public class HexDrawing<T: FloatingPoint>  {
 			if
 				let theHexagonCenter = hexagonCenter,
 				let theOffset = offset,
-				let theWorldPoint = WorldPoint<T>(x: theHexagonCenter.x + theOffset.x,
+				let theWorldPoint = HexWorldPoint<T>(x: theHexagonCenter.x + theOffset.x,
 												  y: theHexagonCenter.y + theOffset.y) {
 				hexagonCorners.append(theWorldPoint)
 			}

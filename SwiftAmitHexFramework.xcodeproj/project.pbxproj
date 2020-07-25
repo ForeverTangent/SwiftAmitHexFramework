@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"SwiftAmitHexFramework::SwiftAmitHexFrameworkPackageTests::ProductTarget" /* SwiftAmitHexFrameworkPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_41 /* Build configuration list for PBXAggregateTarget "SwiftAmitHexFrameworkPackageTests" */;
+			buildConfigurationList = OBJ_51 /* Build configuration list for PBXAggregateTarget "SwiftAmitHexFrameworkPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_44 /* PBXTargetDependency */,
+				OBJ_54 /* PBXTargetDependency */,
 			);
 			name = SwiftAmitHexFrameworkPackageTests;
 			productName = SwiftAmitHexFrameworkPackageTests;
@@ -21,28 +21,30 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		31630DA424CA10890012208B /* HexFractional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31630DA324CA10890012208B /* HexFractional.swift */; };
-		31630DA624CA23950012208B /* HexShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31630DA524CA23950012208B /* HexShape.swift */; };
-		OBJ_28 /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Hex.swift */; };
-		OBJ_29 /* HexConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HexConvertion.swift */; };
-		OBJ_30 /* HexDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* HexDrawing.swift */; };
-		OBJ_31 /* HexOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HexOrientation.swift */; };
-		OBJ_32 /* SwiftAmitHexFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SwiftAmitHexFramework.swift */; };
-		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_50 /* SwiftAmitHexFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* SwiftAmitHexFrameworkTests.swift */; };
-		OBJ_51 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* XCTestManifests.swift */; };
-		OBJ_53 /* SwiftAmitHexFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAmitHexFramework::SwiftAmitHexFramework::Product" /* SwiftAmitHexFramework.framework */; };
+		OBJ_34 /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Hex.swift */; };
+		OBJ_35 /* HexConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HexConvertion.swift */; };
+		OBJ_36 /* HexDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* HexDrawing.swift */; };
+		OBJ_37 /* HexFractional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HexFractional.swift */; };
+		OBJ_38 /* HexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* HexLayout.swift */; };
+		OBJ_39 /* HexOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* HexOrientation.swift */; };
+		OBJ_40 /* HexShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* HexShape.swift */; };
+		OBJ_42 /* HexWorldPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HexWorldPoint.swift */; };
+		OBJ_49 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_60 /* HexLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* HexLayoutTests.swift */; };
+		OBJ_61 /* HexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* HexTests.swift */; };
+		OBJ_63 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* XCTestManifests.swift */; };
+		OBJ_65 /* SwiftAmitHexFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAmitHexFramework::SwiftAmitHexFramework::Product" /* SwiftAmitHexFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31630DA124C9FFE40012208B /* PBXContainerItemProxy */ = {
+		3186956724CB9F4B00565D93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftAmitHexFramework::SwiftAmitHexFramework";
 			remoteInfo = SwiftAmitHexFramework;
 		};
-		31630DA224C9FFE40012208B /* PBXContainerItemProxy */ = {
+		3186956824CB9F4C00565D93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -52,16 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31630DA324CA10890012208B /* HexFractional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexFractional.swift; sourceTree = "<group>"; };
-		31630DA524CA23950012208B /* HexShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexShape.swift; sourceTree = "<group>"; };
 		OBJ_10 /* HexConvertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexConvertion.swift; sourceTree = "<group>"; };
 		OBJ_11 /* HexDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexDrawing.swift; sourceTree = "<group>"; };
-		OBJ_12 /* HexOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexOrientation.swift; sourceTree = "<group>"; };
-		OBJ_13 /* SwiftAmitHexFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAmitHexFramework.swift; sourceTree = "<group>"; };
-		OBJ_16 /* SwiftAmitHexFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAmitHexFrameworkTests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_21 /* BUILDS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BUILDS; sourceTree = SOURCE_ROOT; };
-		OBJ_22 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_12 /* HexFractional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexFractional.swift; sourceTree = "<group>"; };
+		OBJ_13 /* HexLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexLayout.swift; sourceTree = "<group>"; };
+		OBJ_14 /* HexOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexOrientation.swift; sourceTree = "<group>"; };
+		OBJ_15 /* HexShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexShape.swift; sourceTree = "<group>"; };
+		OBJ_17 /* HexWorldPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexWorldPoint.swift; sourceTree = "<group>"; };
+		OBJ_20 /* HexLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexLayoutTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* HexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexTests.swift; sourceTree = "<group>"; };
+		OBJ_23 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_27 /* BUILDS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BUILDS; sourceTree = SOURCE_ROOT; };
+		OBJ_28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
 		"SwiftAmitHexFramework::SwiftAmitHexFramework::Product" /* SwiftAmitHexFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftAmitHexFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,43 +73,44 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_33 /* Frameworks */ = {
+		OBJ_43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_52 /* Frameworks */ = {
+		OBJ_64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_53 /* SwiftAmitHexFramework.framework in Frameworks */,
+				OBJ_65 /* SwiftAmitHexFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_14 /* Tests */ = {
+		OBJ_18 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* SwiftAmitHexFrameworkTests */,
+				OBJ_19 /* SwiftAmitHexFrameworkTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* SwiftAmitHexFrameworkTests */ = {
+		OBJ_19 /* SwiftAmitHexFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* SwiftAmitHexFrameworkTests.swift */,
-				OBJ_17 /* XCTestManifests.swift */,
+				OBJ_21 /* HexTests.swift */,
+				OBJ_20 /* HexLayoutTests.swift */,
+				OBJ_23 /* XCTestManifests.swift */,
 			);
 			name = SwiftAmitHexFrameworkTests;
 			path = Tests/SwiftAmitHexFrameworkTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Products */ = {
+		OBJ_24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SwiftAmitHexFramework::SwiftAmitHexFramework::Product" /* SwiftAmitHexFramework.framework */,
@@ -119,10 +124,10 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_14 /* Tests */,
-				OBJ_18 /* Products */,
-				OBJ_21 /* BUILDS */,
-				OBJ_22 /* README.md */,
+				OBJ_18 /* Tests */,
+				OBJ_24 /* Products */,
+				OBJ_27 /* BUILDS */,
+				OBJ_28 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -141,10 +146,11 @@
 				OBJ_9 /* Hex.swift */,
 				OBJ_10 /* HexConvertion.swift */,
 				OBJ_11 /* HexDrawing.swift */,
-				31630DA324CA10890012208B /* HexFractional.swift */,
-				OBJ_12 /* HexOrientation.swift */,
-				31630DA524CA23950012208B /* HexShape.swift */,
-				OBJ_13 /* SwiftAmitHexFramework.swift */,
+				OBJ_12 /* HexFractional.swift */,
+				OBJ_13 /* HexLayout.swift */,
+				OBJ_14 /* HexOrientation.swift */,
+				OBJ_15 /* HexShape.swift */,
+				OBJ_17 /* HexWorldPoint.swift */,
 			);
 			name = SwiftAmitHexFramework;
 			path = Sources/SwiftAmitHexFramework;
@@ -155,10 +161,10 @@
 /* Begin PBXNativeTarget section */
 		"SwiftAmitHexFramework::SwiftAmitHexFramework" /* SwiftAmitHexFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFramework" */;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFramework" */;
 			buildPhases = (
-				OBJ_27 /* Sources */,
-				OBJ_33 /* Frameworks */,
+				OBJ_33 /* Sources */,
+				OBJ_43 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,15 +177,15 @@
 		};
 		"SwiftAmitHexFramework::SwiftAmitHexFrameworkTests" /* SwiftAmitHexFrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_46 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkTests" */;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkTests" */;
 			buildPhases = (
-				OBJ_49 /* Sources */,
-				OBJ_52 /* Frameworks */,
+				OBJ_59 /* Sources */,
+				OBJ_64 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_54 /* PBXTargetDependency */,
+				OBJ_66 /* PBXTargetDependency */,
 			);
 			name = SwiftAmitHexFrameworkTests;
 			productName = SwiftAmitHexFrameworkTests;
@@ -188,9 +194,9 @@
 		};
 		"SwiftAmitHexFramework::SwiftPMPackageDescription" /* SwiftAmitHexFrameworkPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkPackageDescription" */;
+			buildConfigurationList = OBJ_45 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkPackageDescription" */;
 			buildPhases = (
-				OBJ_38 /* Sources */,
+				OBJ_48 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -217,7 +223,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_18 /* Products */;
+			productRefGroup = OBJ_24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -230,109 +236,55 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_27 /* Sources */ = {
+		OBJ_33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				31630DA424CA10890012208B /* HexFractional.swift in Sources */,
-				OBJ_28 /* Hex.swift in Sources */,
-				OBJ_29 /* HexConvertion.swift in Sources */,
-				31630DA624CA23950012208B /* HexShape.swift in Sources */,
-				OBJ_30 /* HexDrawing.swift in Sources */,
-				OBJ_31 /* HexOrientation.swift in Sources */,
-				OBJ_32 /* SwiftAmitHexFramework.swift in Sources */,
+				OBJ_34 /* Hex.swift in Sources */,
+				OBJ_35 /* HexConvertion.swift in Sources */,
+				OBJ_36 /* HexDrawing.swift in Sources */,
+				OBJ_37 /* HexFractional.swift in Sources */,
+				OBJ_38 /* HexLayout.swift in Sources */,
+				OBJ_39 /* HexOrientation.swift in Sources */,
+				OBJ_40 /* HexShape.swift in Sources */,
+				OBJ_42 /* HexWorldPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_38 /* Sources */ = {
+		OBJ_48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_39 /* Package.swift in Sources */,
+				OBJ_49 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_49 /* Sources */ = {
+		OBJ_59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_50 /* SwiftAmitHexFrameworkTests.swift in Sources */,
-				OBJ_51 /* XCTestManifests.swift in Sources */,
+				OBJ_60 /* HexLayoutTests.swift in Sources */,
+				OBJ_61 /* HexTests.swift in Sources */,
+				OBJ_63 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftAmitHexFramework::SwiftAmitHexFrameworkTests" /* SwiftAmitHexFrameworkTests */;
-			targetProxy = 31630DA224C9FFE40012208B /* PBXContainerItemProxy */;
-		};
 		OBJ_54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			target = "SwiftAmitHexFramework::SwiftAmitHexFrameworkTests" /* SwiftAmitHexFrameworkTests */;
+			targetProxy = 3186956824CB9F4C00565D93 /* PBXContainerItemProxy */;
+		};
+		OBJ_66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			target = "SwiftAmitHexFramework::SwiftAmitHexFramework" /* SwiftAmitHexFramework */;
-			targetProxy = 31630DA124C9FFE40012208B /* PBXContainerItemProxy */;
+			targetProxy = 3186956724CB9F4B00565D93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftAmitHexFramework.xcodeproj/SwiftAmitHexFramework_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftAmitHexFramework;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftAmitHexFramework;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_26 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftAmitHexFramework.xcodeproj/SwiftAmitHexFramework_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftAmitHexFramework;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftAmitHexFramework;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,21 +312,59 @@
 			};
 			name = Debug;
 		};
-		OBJ_36 /* Debug */ = {
+		OBJ_31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftAmitHexFramework.xcodeproj/SwiftAmitHexFramework_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftAmitHexFramework;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftAmitHexFramework;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		OBJ_37 /* Release */ = {
+		OBJ_32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftAmitHexFramework.xcodeproj/SwiftAmitHexFramework_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftAmitHexFramework;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftAmitHexFramework;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -402,19 +392,37 @@
 			};
 			name = Release;
 		};
-		OBJ_42 /* Debug */ = {
+		OBJ_46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_43 /* Release */ = {
+		OBJ_53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_47 /* Debug */ = {
+		OBJ_57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -439,7 +447,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_48 /* Release */ = {
+		OBJ_58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -476,38 +484,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_24 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFramework" */ = {
+		OBJ_30 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_25 /* Debug */,
-				OBJ_26 /* Release */,
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_35 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkPackageDescription" */ = {
+		OBJ_45 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_36 /* Debug */,
-				OBJ_37 /* Release */,
+				OBJ_46 /* Debug */,
+				OBJ_47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_41 /* Build configuration list for PBXAggregateTarget "SwiftAmitHexFrameworkPackageTests" */ = {
+		OBJ_51 /* Build configuration list for PBXAggregateTarget "SwiftAmitHexFrameworkPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_42 /* Debug */,
-				OBJ_43 /* Release */,
+				OBJ_52 /* Debug */,
+				OBJ_53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_46 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkTests" */ = {
+		OBJ_56 /* Build configuration list for PBXNativeTarget "SwiftAmitHexFrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_47 /* Debug */,
-				OBJ_48 /* Release */,
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

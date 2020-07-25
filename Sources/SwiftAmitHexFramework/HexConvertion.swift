@@ -32,7 +32,7 @@ public struct HexConvertion<T: FloatingPoint> {
 
 	Renamed to take advantage of Swift's self-documenting.
 	*/
-	func getPixelFromHex(_ hex: Hex) -> WorldPoint<T>? {
+	func getPixelFromHex(_ hex: Hex) -> HexWorldPoint<T>? {
 
 		let coverting = hexLayout.orientation
 
@@ -44,7 +44,7 @@ public struct HexConvertion<T: FloatingPoint> {
 		let x = (x_forward_q + x_forward_r) * hexLayout.size.x
 		let y = (y_forward_q + y_forward_r) * hexLayout.size.y
 
-		return WorldPoint(x: x + hexLayout.origin.x, y: y + hexLayout.origin.y)
+		return HexWorldPoint(x: x + hexLayout.origin.x, y: y + hexLayout.origin.y)
 	}
 
 	/**
@@ -52,19 +52,19 @@ public struct HexConvertion<T: FloatingPoint> {
 
 	Renamed to take advantage of Swift's self-documenting.
 	*/
-	func getHexFromWorldPoint(_ worldPoint: WorldPoint<T>) -> HexFractional<T>? {
+	func getHexFromWorldPoint(_ worldPoint: HexWorldPoint<T>) -> HexFractional<T>? {
 
 		let theHexOrientation: HexOrientation = hexLayout.orientation
 
 		guard
-			let theWorldPoint = WorldPoint<T>(
+			let theWorldPoint = HexWorldPoint<T>(
 				x: (worldPoint.x - hexLayout.origin.x) / hexLayout.size.x,
 				y:  (worldPoint.y - hexLayout.origin.y) / hexLayout.size.y) else {
 					return nil
 		}
 
-		let q: Double = (theHexOrientation.up_X * theWorldPoint.x + theHexOrientation.up_Y * theWorldPoint.y) as! Double
-		let r: Double = (theHexOrientation.up_Z * theWorldPoint.x + theHexOrientation.up_W * theWorldPoint.y) as! Double
+		let q: Double = (theHexOrientation.inverse_X * theWorldPoint.x + theHexOrientation.inverse_Y * theWorldPoint.y) as! Double
+		let r: Double = (theHexOrientation.inverse_Z * theWorldPoint.x + theHexOrientation.inverse_W * theWorldPoint.y) as! Double
 
 		return HexFractional(q: q, r: r, s: -q - r);
 	}
